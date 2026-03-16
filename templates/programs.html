@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Programs</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">UCMS</div>
+
+<div class="nav-links">
+<a href="/">Home</a>
+<a href="/programs">Programs</a>
+<a href="/add_program">Add Program</a>
+</div>
+
+</nav>
+
+<div class="page-container">
+
+<h2>Programs</h2>
+
+<table class="course-table">
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Duration</th>
+<th>Degree</th>
+</tr>
+
+{% for p in programs %}
+<tr>
+<td>{{p[0]}}</td>
+<td>{{p[1]}}</td>
+<td>{{p[2]}}</td>
+<td>{{p[3]}}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</div>
+
+</body>
+</html>

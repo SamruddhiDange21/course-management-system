@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Instructors</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">UCMS</div>
+
+<div class="nav-links">
+<a href="/">Home</a>
+<a href="/instructors">Instructors</a>
+<a href="/add_instructor">Add Instructor</a>
+</div>
+
+</nav>
+
+<div class="page-container">
+
+<h2>Instructors</h2>
+
+<table class="course-table">
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Email</th>
+<th>Designation</th>
+</tr>
+
+{% for i in instructors %}
+<tr>
+<td>{{i[0]}}</td>
+<td>{{i[1]}}</td>
+<td>{{i[2]}}</td>
+<td>{{i[3]}}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</div>
+
+</body>
+</html>

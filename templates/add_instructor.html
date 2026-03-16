@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add Instructor</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">UCMS</div>
+
+<div class="nav-links">
+<a href="/">Home</a>
+<a href="/instructors">Instructors</a>
+<a href="/add_instructor">Add Instructor</a>
+</div>
+
+</nav>
+
+<div class="page-container">
+
+<h2>Add Instructor</h2>
+
+<form class="course-form" method="POST">
+
+<input type="text" name="name" placeholder="Instructor Name" required>
+
+<input type="email" name="email" placeholder="Email" required>
+
+<input type="text" name="designation" placeholder="Designation" required>
+
+<button type="submit">Add Instructor</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

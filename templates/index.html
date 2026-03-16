@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>University Course Management</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">UCMS</div>
+
+<div class="nav-links">
+
+<a href="/">Home</a>
+
+<a href="/courses">Courses</a>
+<a href="/add_course">Add Course</a>
+
+<a href="/programs">Programs</a>
+<a href="/add_program">Add Program</a>
+
+<a href="/departments">Departments</a>
+<a href="/add_department">Add Department</a>
+
+<a href="/instructors">Instructors</a>
+<a href="/add_instructor">Add Instructor</a>
+
+</div>
+
+</nav>
+
+
+<div class="hero">
+
+<h1>University Course Management System</h1>
+
+<p>Manage courses, programs, departments and instructors easily</p>
+
+<div class="hero-buttons">
+
+<a href="/courses" class="primary-btn">View Courses</a>
+
+<a href="/add_course" class="secondary-btn">Add Course</a>
+
+</div>
+
+</div>
+
+
+<div class="dashboard">
+
+<h2>System Modules</h2>
+
+<div class="cards">
+
+<a href="/programs" class="card">
+<h3>Programs</h3>
+<p>View and manage academic programs</p>
+</a>
+
+<a href="/departments" class="card">
+<h3>Departments</h3>
+<p>Manage university departments</p>
+</a>
+
+<a href="/instructors" class="card">
+<h3>Instructors</h3>
+<p>View and manage instructors</p>
+</a>
+
+<a href="/courses" class="card">
+<h3>Courses</h3>
+<p>Browse and manage course offerings</p>
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
